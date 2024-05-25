@@ -14,13 +14,28 @@ console.table([typeof(a),typeof(b),typeof(c),typeof(d),typeof(e)])
 /* OUTPUT
 
 ┌─────────┬─────────────┐
-│ (index) │ Values      │
+│ (index) │ Datatypes   │
 ├─────────┼─────────────┤
-│ 0       │ 'string'    │
-│ 1       │ 'number'    │
-│ 2       │ 'boolean'   │
-│ 3       │ 'undefined' │
-│ 4       │ 'object'    │
+│ a       │ 'string'    │
+│ b       │ 'number'    │
+│ c       │ 'boolean'   │
+│ d       │ 'undefined' │
+│ e       │ 'object'    │
 └─────────┴─────────────┘
+
+*/
+
+/*
+
+1. Primitive data types => number, string, boolean, null, undefined
+2. Reference data types => arrays, objects, function  (type needs to be defined)
+    const friuts =["apples", "bananas", "litchies"]        => array
+    let details={
+        name="Mickey",
+        age=20
+    }                                                      => object
+    let myFunc=function(){
+        console.log("Hello World!")
+    }                                                      =>function
 
 */
