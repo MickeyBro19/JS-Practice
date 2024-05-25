@@ -14,7 +14,7 @@ console.table([typeof(a),typeof(b),typeof(c),typeof(d),typeof(e)])
 /* OUTPUT
 
 ┌─────────┬─────────────┐
-│ (index) │ Datatypes   │
+│Variables│ Datatypes   │
 ├─────────┼─────────────┤
 │ a       │ 'string'    │
 │ b       │ 'number'    │
@@ -27,10 +27,10 @@ console.table([typeof(a),typeof(b),typeof(c),typeof(d),typeof(e)])
 
 /*
 
-1. Primitive data types => number, string, boolean, null, undefined
-2. Reference data types => arrays, objects, function  (type needs to be defined)
+1. Primitive data types => number, string, boolean, null, undefined   { Stack => Stores a copy of original value in a new container, chamges made doesn't alter the origonal value }
+2. Reference data types => arrays, objects, function  (type needs to be defined)   { Heap => Stores the refernce of the original value, changes made alters the original value }
     const friuts =["apples", "bananas", "litchies"]        => array
-    let details={
+    let user={
         name="Mickey",
         age=20
     }                                                      => object
