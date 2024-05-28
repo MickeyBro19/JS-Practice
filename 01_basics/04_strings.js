@@ -11,5 +11,4 @@ My name is Mickey and my age is 25  // new way
 
  */
 
-let str=new String('MickeyFC')
 
