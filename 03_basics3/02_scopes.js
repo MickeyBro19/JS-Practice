@@ -16,3 +16,34 @@ console.log(a);
 20      //inner b
 100     //outer a
  */
+
+
+
+//      nested scope
+
+function one(){
+    const username="Mickey"
+
+    function two(){
+        const web="github"
+        console.log(username);
+
+    }
+    //console.log(web);
+    two()
+}
+
+one()
+
+//      HOISTING
+
+console.log(addone(5));
+function addone(num){
+    return num+1
+}
+
+
+const addtwo=function(num){         ///FUNCTION HOISTING
+    return num+2
+}
+console.log(addtwo(5))
