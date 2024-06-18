@@ -1,0 +1,118 @@
+Element Attributes
+
+    id: Provides a unique identifier for an element, which can be used to easily select and manipulate the element in JavaScript.
+
+    class: Specifies one or more class names for an element, allowing you to target elements for styling or manipulation based on their class.
+
+    *data- (data attributes)**: Custom attributes prefixed with data-, used to store custom data associated with an element. These can be accessed via element.dataset in JavaScript.
+
+    style: Defines inline CSS styles for an element, which can be modified dynamically using JavaScript to change the appearance of the element.
+
+    src: Specifies the URL of an external resource (like an image or script) that can be loaded or manipulated using JavaScript.
+
+    href: Defines the URL of the linked resource in anchor (<a>) elements, which can be dynamically changed or accessed in JavaScript.
+
+    value: Represents the current value of an input element (<input>, <textarea>, <select>), which can be read or modified using JavaScript.
+
+Event Handler Attributes
+
+These attributes are used to attach JavaScript functions to specific events that occur on HTML elements:
+
+    onclick: Fires when an element is clicked.
+
+    onchange: Fires when the value of an element changes (for <input>, <select>, <textarea>).
+
+    onsubmit: Fires when a form is submitted.
+
+    onmouseover: Fires when the mouse pointer moves over an element.
+
+    onmouseout: Fires when the mouse pointer moves out of an element.
+
+    onkeydown, onkeyup, onkeypress: Fire when a key is pressed down, released, or pressed and released, respectively.
+
+    onload: Fires when an object (like an image) has been loaded.
+
+    onerror: Fires when an error occurs while loading an external resource (like an image or script).
+
+    onfocus, onblur: Fire when an element gains or loses focus, respectively.
+
+Form-related Attributes
+
+These attributes are used with form elements (<input>, <textarea>, <select>, <button>, <form>) and are commonly used in conjunction with JavaScript for form validation and submission:
+
+    disabled: Disables an input element, preventing user interaction.
+    
+    action: Specifies the URL to which the form data should be submitted when the form is submitted.
+
+    method: Specifies the HTTP method (GET or POST) used when submitting the form data.
+
+    enctype: Specifies the encoding type (application/x-www-form-urlencoded, multipart/form-data, or text/plain) used when submitting form data.
+
+    readonly: Specifies that an input field is read-only, allowing selection and copying but not editing.
+
+    autofocus: Specifies that an element should automatically get focus when the page loads.
+
+    autocomplete: Specifies whether a form or input field should have autocomplete enabled.
+
+    required: Specifies that an input field must be filled out before submitting the form.
+
+    form: Specifies which form an element belongs to, facilitating access to form data in JavaScript.
+
+    Input Attributes
+
+    type: Specifies the type of an <input> element (text, password, checkbox, radio, number, date, etc.), influencing its behavior and validation rules.
+
+    placeholder: Provides a hint or example text for an <input> field, displayed when the field is empty.
+
+    maxlength, minlength: Specifies the maximum and minimum number of characters allowed in an <input> field, respectively.
+
+    pattern: Specifies a regular expression pattern that an <input> element's value must match to be considered valid.
+
+    checked: Used with <input type="checkbox"> and <input type="radio"> to indicate whether the checkbox or radio button should be checked by default.
+
+    value: Represents the current value of an <input>, <textarea>, or <select> element, which can be read or modified using JavaScript.
+
+Image and Media Attributes
+
+    src: Specifies the URL of an image (<img>) or media resource (<video>, <audio>), allowing dynamic loading or modification of the media content.
+
+    alt: Provides alternative text for an image (<img>), displayed when the image cannot be loaded or accessed for accessibility purposes.
+
+    autoplay: Specifies that a video or audio element should automatically start playback when it's ready.
+
+    controls: Specifies that video or audio playback controls should be displayed to the user.
+
+Selectors
+
+    Selecting by ID
+
+        document.getElementById('myId')
+
+    Selecting by Class Name
+
+        document.getElementsByClassName('myClass')
+
+    Selecting by Tag Name
+
+        document.getElementsByTagName('div')
+
+    Selecting by CSS Selector (single element)
+
+        document.querySelector('.myClass')
+
+    Selecting by CSS Selector (multiple elements)        returns nodelist so we have to mention the element position like in a array to apply attributes
+
+        document.querySelectorAll('.myClass')
+
+
+NodeList
+
+    Can contain different types of nodes.
+    Can be static or live.
+    Supports forEach method.
+
+HTMLCollection
+
+    Contains only element nodes.
+    Always live.
+    Can be accessed by index, item(), and namedItem() methods.
