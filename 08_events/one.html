@@ -45,11 +45,20 @@
     //owl clicked--------------event capturing
 
     //document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault()
-        e.stopPropagation()          //to prevent default actions
-        console.log("clicked google")
+    //    e.preventDefault()
+    //    e.stopPropagation()          //to prevent default actions
+    //    console.log("clicked google")
     //},false)
 
+    document.querySelector('#images').addEventListener('click',function(e){
+        let removeIt=e.target.parentNode
+        if(e.target.tagName=='IMG'){
+            removeIt.remove()       //to remove elements
+            console.log("removed",e.target.id) 
+        }
+
+        
+    },false)
 
 
 
